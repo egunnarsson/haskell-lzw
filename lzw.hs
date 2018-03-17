@@ -33,6 +33,7 @@ lastToMaybe :: [a] -> Maybe a
 lastToMaybe [] = Nothing
 lastToMaybe x  = Just (last x)
 
+splitAt' :: Int -> [a] -> Maybe ([a],[a])
 splitAt' 0 zs = Just ([],zs)
 splitAt' n [] = Nothing
 splitAt' n (z:zs)
